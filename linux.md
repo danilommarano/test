@@ -12,14 +12,14 @@ Author: Danilo Matrangolo Marano (danilo.m.marano@gmail.com)
 - [2. Basics](#2-basics)
   - [2.1 `whoami`](#21-whoami)
   - [2.2 `pwd`](#22-pwd)
-  - [2.2 `pwd`](###Archivingfileswith`tar`)
+  - [2.2 `pwd`](#Archivingfileswith`tar`)
 
   [Custom foo description](#2foo)
 
 
 
 
-## 2. Basics
+## 2. Getting information
 
 ### 2.1 `whoami`
 
@@ -34,7 +34,151 @@ root
 ```
 
 ### 2.2 `pwd`
-This command indicates the curently open path.
+
+This command indicates the curently open path. It is the acronym of '_print the working directory_'
+
+```
+dpc@danilo:~$ pwd
+/home/dpc
+```
+
+### 2.3 `hostname`
+
+You can print the system hostname.
+
+```
+dpc@danilo:~$ hostname
+danilo
+```
+
+### 2.4 `man` e `--help`
+
+Both of them results in the information about the command that is next to them. The difference between both is that `man` is a command, offering the complete and extense documentation of that other command, and `--help` is an atribute, wich results on a quick tutorial and some information about the command.
+
+```bash
+dpc@danilo:~$ whoami --help
+Usage: whoami [OPTION]...
+Print the user name associated with the current effective user ID.
+Same as id -un.
+
+      --help     display this help and exit
+      --version  output version information and exit
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/whoami>
+or available locally via: info '(coreutils) whoami invocation'
+
+```
+
+```bash
+dpc@danilo:~$ man whoami
+
+WHOAMI(1)                        User Commands                       WHOAMI(1)
+
+NAME
+       whoami - print effective userid
+
+SYNOPSIS
+       whoami [OPTION]...
+
+DESCRIPTION
+       Print  the  user  name  associated  with the current effective user ID.
+       Same as id -un.
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+AUTHOR
+       Written by Richard Mlynarik.
+
+REPORTING BUGS
+       GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+       Report   whoami   translation    bugs    to    <https://translationproject.org/team/>
+
+COPYRIGHT
+       Copyright  ©  2018  Free Software Foundation, Inc.  License GPLv3+: GNU
+       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free  to  change  and  redistribute  it.
+       There is NO WARRANTY, to the extent permitted by law.
+
+SEE ALSO
+       Full documentation at: <https://www.gnu.org/software/coreutils/whoami>
+       or available locally via: info '(coreutils) whoami invocation'
+
+GNU coreutils 8.30              September 2019                       WHOAMI(1)
+```
+
+
+
+### 2.5 `passwd`
+
+Change the password of a user. On Ubuntu OS the root doesn't have passowrd.
+
+```
+dpc@danilo:~$ passwd
+Changing password for dpc.
+Current password:
+```
+
+### 2.6 `last`
+
+Informs the last users logged on the system
+
+```
+dpc@danilo:~$ last
+dpc      :1           :1               Wed Oct 28 23:19   still logged in
+reboot   system boot  5.4.0-7642-gener Wed Oct 28 23:19   still running
+dpc      :1           :1               Wed Oct 28 20:29 - down   (02:49)
+reboot   system boot  5.4.0-7642-gener Wed Oct 28 20:29 - 23:19  (02:49)
+dpc      :1           :1               Wed Oct 28 15:34 - down   (04:54)
+reboot   system boot  5.4.0-7642-gener Wed Oct 28 14:31 - 20:28  (05:57)
+```
+
+### 2.7 `apropos`
+
+This command is used when you want to find a command that does a specific thing or you forget the name of one. It will search all that have some correlation with the word chosen.
+
+```bash
+dpc@danilo:~$ apropos empty
+git-init (1)         - Create an empty Git repository or reinitialize an exis...
+git-init-db (1)      - Creates an empty Git repository
+LIST_EMPTY (3)       - implementations of singly-linked lists, singly-linked ...
+rmdir (1)            - remove empty directories
+SDL_CreateRGBSurface (3) - Create an empty SDL_Surface
+sigemptyset (3)      - POSIX signal set operations
+sigisemptyset (3)    - POSIX signal set operations
+SLIST_EMPTY (3)      - implementations of singly-linked lists, singly-linked ...
+STAILQ_EMPTY (3)     - implementations of singly-linked lists, singly-linked ...
+TAILQ_EMPTY (3)      - implementations of singly-linked lists, singly-linked ...
+```
+
+```zsh
+alsdf@jalsk $ ls -l
+total 1292
+drwxr-xr-x  9 dpc dpc    4096 Oct 27 21:23 'Calibre Library'
+drwxrwxr-x  8 dpc dpc    4096 Oct  1 19:42  data
+drwxr-xr-x  2 dpc dpc    4096 Oct 11 13:32  Desktop
+drwxr-xr-x  8 dpc dpc    4096 Oct 15 16:27  Documents
+drwxr-xr-x  3 dpc dpc    4096 Oct 27 15:18  Downloads
+drwxrwxr-x  3 dpc dpc    4096 Oct 20 08:55  droidcam
+-rw-rw-r--  1 dpc dpc 1239899 Sep 27 16:39  droidcam_latest.zip
+drwxrwxr-x  5 dpc dpc    4096 Oct 14 22:45  Kaggle
+drwxrwxr-x  6 dpc dpc    4096 Oct 16 09:40  kivy
+drwxrwxr-x  2 dpc dpc    4096 Oct 22 10:50  MEGAsync
+drwxr-xr-x  2 dpc dpc    4096 Aug 23 22:19  Music
+drwxr-xr-x  5 dpc dpc    4096 Oct 11 13:59  Pictures
+drwxrwxr-x 10 dpc dpc    4096 Oct 19 15:41  Projects
+drwxr-xr-x  2 dpc dpc    4096 Aug 23 22:19  Public
+drwxrwxr-x  3 dpc dpc    4096 Oct 19 11:42  R
+drwxr-xr-x  4 dpc dpc    4096 Oct 15 18:33  snap
+drwxrwxr-x 21 dpc dpc    4096 Oct 28 18:21  Study
+drwxr-xr-x  2 dpc dpc    4096 Aug 23 22:19  Templates
+drwxrwxr-x  3 dpc dpc    4096 Oct 28 19:40  test
+drwxr-xr-x  2 dpc dpc    4096 Oct 21 19:02  Videos
+drwxrwxr-x  3 dpc dpc    4096 Oct  9 14:23 'VirtualBox VMs'
+```
 
 ### Path Links
 
