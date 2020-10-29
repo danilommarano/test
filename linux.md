@@ -6,11 +6,15 @@ Author: Danilo Matrangolo Marano (danilo.m.marano@gmail.com)
 
 ## 1.Index
 
-- [1. Index](##1.Index)
-- [2. Basics](##2.Basics)
+- [1. Index](#1.Index)
+- [2. Basics](#2.basics)
   - [2.1 `whoami`](###2.1`whoami`)
-  - [2.2 `pwd`](###2.2`pwd`)
+  - [2.2 `pwd`](###-2.2-`pwd`)
   - [2.2 `pwd`](###Archivingfileswith`tar`)
+
+  [Custom foo description](#foo)
+
+
 
 
 ## 2. Basics
@@ -76,3 +80,5 @@ total 3
 ```
 
 ### Archiving files with `tar`
+
+# Foo
