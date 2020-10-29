@@ -10,7 +10,7 @@ Author: Danilo Matrangolo Marano (danilo.m.marano@gmail.com)
 
 - [1. Index](#1-index)
 - [2. Basics](#2-basics)
-  - [2.1`whoami`](###21-whoami)
+  - [2.1`whoami`](###21whoami)
   - [2.2 `pwd`](###-2.2-`pwd`)
   - [2.2 `pwd`](###Archivingfileswith`tar`)
 
