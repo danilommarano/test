@@ -6,8 +6,8 @@ Author: Danilo Matrangolo Marano (danilo.m.marano@gmail.com)
 
 ## 1.Index
 
-- [1. Index](#1.Index)
-- [2. Basics](#2.basics)
+- [1. Index](#1index)
+- [2. Basics](#2basics)
   - [2.1 `whoami`](###2.1`whoami`)
   - [2.2 `pwd`](###-2.2-`pwd`)
   - [2.2 `pwd`](###Archivingfileswith`tar`)
