@@ -25,7 +25,7 @@ Author: Danilo Matrangolo Marano (danilo.m.marano@gmail.com)
 
 It's pretty obvious what it does, indicates the curently user logged in. It's basicaly you asking the system: _Who am I?_ or _What user am I_?
 
-```
+```console
 dpc@danilo:~$ whoami
 dpc
 
