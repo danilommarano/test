@@ -12,7 +12,7 @@ Author: Danilo Matrangolo Marano (danilo.m.marano@gmail.com)
   - [2.2 `pwd`](###-2.2-`pwd`)
   - [2.2 `pwd`](###Archivingfileswith`tar`)
 
-  [Custom foo description](#2.foo)
+  [Custom foo description](#2foo)
 
 
 
