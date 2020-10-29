@@ -10,7 +10,7 @@ Author: Danilo Matrangolo Marano (danilo.m.marano@gmail.com)
 
 - [1. Index](#1-index)
 - [2. Basics](#2-basics)
-  - [2.1`whoami`](###2.1-whoami)
+  - [2.1`whoami`](###21-whoami)
   - [2.2 `pwd`](###-2.2-`pwd`)
   - [2.2 `pwd`](###Archivingfileswith`tar`)
 
@@ -21,7 +21,7 @@ Author: Danilo Matrangolo Marano (danilo.m.marano@gmail.com)
 
 ## 2. Basics
 
-### 2.1 whoami
+### 21 whoami
 
 It's pretty obvious what it does, indicates the curently user logged in. It's basicaly you asking the system: _Who am I?_ or _What user am I_?
 
