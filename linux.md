@@ -25,7 +25,7 @@ Author: Danilo Matrangolo Marano (danilo.m.marano@gmail.com)
 
 It's pretty obvious what it does, indicates the curently user logged in. It's basicaly you asking the system: _Who am I?_ or _What user am I_?
 
-```
+```console
 dpc@danilo:~$ whoami
 dpc
 
@@ -37,7 +37,7 @@ root
 
 This command indicates the curently open path. It is the acronym of '_print the working directory_'
 
-```
+```console
 dpc@danilo:~$ pwd
 /home/dpc
 ```
@@ -46,7 +46,7 @@ dpc@danilo:~$ pwd
 
 You can print the system hostname.
 
-```
+```console
 dpc@danilo:~$ hostname
 danilo
 ```
@@ -55,7 +55,7 @@ danilo
 
 Both of them results in the information about the command that is next to them. The difference between both is that `man` is a command, offering the complete and extense documentation of that other command, and `--help` is an atribute, wich results on a quick tutorial and some information about the command.
 
-```bash
+```console
 dpc@danilo:~$ whoami --help
 Usage: whoami [OPTION]...
 Print the user name associated with the current effective user ID.
@@ -70,7 +70,7 @@ or available locally via: info '(coreutils) whoami invocation'
 
 ```
 
-```bash
+```console
 dpc@danilo:~$ man whoami
 
 WHOAMI(1)                        User Commands                       WHOAMI(1)
@@ -116,7 +116,7 @@ GNU coreutils 8.30              September 2019                       WHOAMI(1)
 
 Change the password of a user. On Ubuntu OS the root doesn't have passowrd.
 
-```
+```console
 dpc@danilo:~$ passwd
 Changing password for dpc.
 Current password:
@@ -126,7 +126,7 @@ Current password:
 
 Informs the last users logged on the system
 
-```
+```console
 dpc@danilo:~$ last
 dpc      :1           :1               Wed Oct 28 23:19   still logged in
 reboot   system boot  5.4.0-7642-gener Wed Oct 28 23:19   still running
@@ -140,7 +140,7 @@ reboot   system boot  5.4.0-7642-gener Wed Oct 28 14:31 - 20:28  (05:57)
 
 This command is used when you want to find a command that does a specific thing or you forget the name of one. It will search all that have some correlation with the word chosen.
 
-```bash
+```console
 dpc@danilo:~$ apropos empty
 git-init (1)         - Create an empty Git repository or reinitialize an exis...
 git-init-db (1)      - Creates an empty Git repository
@@ -154,31 +154,6 @@ STAILQ_EMPTY (3)     - implementations of singly-linked lists, singly-linked ...
 TAILQ_EMPTY (3)      - implementations of singly-linked lists, singly-linked ...
 ```
 
-```zsh
-alsdf@jalsk $ ls -l
-total 1292
-drwxr-xr-x  9 dpc dpc    4096 Oct 27 21:23 'Calibre Library'
-drwxrwxr-x  8 dpc dpc    4096 Oct  1 19:42  data
-drwxr-xr-x  2 dpc dpc    4096 Oct 11 13:32  Desktop
-drwxr-xr-x  8 dpc dpc    4096 Oct 15 16:27  Documents
-drwxr-xr-x  3 dpc dpc    4096 Oct 27 15:18  Downloads
-drwxrwxr-x  3 dpc dpc    4096 Oct 20 08:55  droidcam
--rw-rw-r--  1 dpc dpc 1239899 Sep 27 16:39  droidcam_latest.zip
-drwxrwxr-x  5 dpc dpc    4096 Oct 14 22:45  Kaggle
-drwxrwxr-x  6 dpc dpc    4096 Oct 16 09:40  kivy
-drwxrwxr-x  2 dpc dpc    4096 Oct 22 10:50  MEGAsync
-drwxr-xr-x  2 dpc dpc    4096 Aug 23 22:19  Music
-drwxr-xr-x  5 dpc dpc    4096 Oct 11 13:59  Pictures
-drwxrwxr-x 10 dpc dpc    4096 Oct 19 15:41  Projects
-drwxr-xr-x  2 dpc dpc    4096 Aug 23 22:19  Public
-drwxrwxr-x  3 dpc dpc    4096 Oct 19 11:42  R
-drwxr-xr-x  4 dpc dpc    4096 Oct 15 18:33  snap
-drwxrwxr-x 21 dpc dpc    4096 Oct 28 18:21  Study
-drwxr-xr-x  2 dpc dpc    4096 Aug 23 22:19  Templates
-drwxrwxr-x  3 dpc dpc    4096 Oct 28 19:40  test
-drwxr-xr-x  2 dpc dpc    4096 Oct 21 19:02  Videos
-drwxrwxr-x  3 dpc dpc    4096 Oct  9 14:23 'VirtualBox VMs'
-```
 
 ### Path Links
 
