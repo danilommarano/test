@@ -21,7 +21,7 @@ Author: Danilo Matrangolo Marano (danilo.m.marano@gmail.com)
 
 ## 2. Basics
 
-### 2.1 `whoami`
+### 2.1 whoami
 
 It's pretty obvious what it does, indicates the curently user logged in. It's basicaly you asking the system: _Who am I?_ or _What user am I_?
 
